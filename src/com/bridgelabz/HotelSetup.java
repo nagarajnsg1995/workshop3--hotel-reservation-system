@@ -18,7 +18,7 @@ public class HotelSetup {
         myHotelList.add(LakeWood);
         myHotelList.add(BridgeWood);
         myHotelList.add(RidgeWood);
- //       System.out.println(myHotelList);
+        System.out.println(myHotelList);
     }
 
     public void showHotelInfo() {
@@ -55,10 +55,14 @@ public class HotelSetup {
 
         Hotel hotel = new Hotel();
         hotel.setHotelName(cheapestHotel.get().getHotelName());
+        hotel.setRating(cheapestHotel.get().getRating());
         hotel.setTotal(cheapestHotel.get().getWeekendRegularRate() * numberOfDays);
 
         System.out.println("HotelName :" + hotel.getHotelName());
+        System.out.println("Hotel rating :" + hotel.getRating());
+
         System.out.println("NumberOfDaysStayed  WeekendRegularRate :" + hotel.getTotal() + "$");
+
 
     }
 
