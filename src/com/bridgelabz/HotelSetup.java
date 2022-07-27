@@ -41,7 +41,7 @@ public class HotelSetup {
         hotel.setHotelName(cheapestHotel.get().getHotelName());
         hotel.setTotal(cheapestHotel.get().getWeekdayRegularRate() * numberOfDays);
         System.out.println("HotelName :" + hotel.getHotelName());
-        System.out.println("NumberOfDaysStayed  WeekdayRegularRate :" + hotel.getTotal() + "$");
+        System.out.println("NumberOfDaysStayed * WeekdayRegularRate :" + hotel.getTotal() + "$");
 
     }
     public void findCheapestHotelTwo(String startDateRange, String endDateRange) {
@@ -58,7 +58,7 @@ public class HotelSetup {
         hotel.setTotal(cheapestHotel.get().getWeekendRegularRate() * numberOfDays);
 
         System.out.println("HotelName :" + hotel.getHotelName());
-        System.out.println("NumberOfDaysStayed  WeekendRegularRate :" + hotel.getTotal() + "$");
+        System.out.println("NumberOfDaysStayed * WeekendRegularRate :" + hotel.getTotal() + "$");
 
 
     }
@@ -75,6 +75,7 @@ public class HotelSetup {
         hotel.setTotal(cheapestHotel.get().getWeekendRegularRate() * numberOfDays);
         hotel.setRating(cheapestHotel.get().getRating());
         System.out.println("HotelName :" + hotel.getHotelName());
+        System.out.println("NumberOfDaysStayed * WeekendRegularRate :" + hotel.getTotal() + "$");
         System.out.println("Raiting :" + hotel.getRating());
 
     }
